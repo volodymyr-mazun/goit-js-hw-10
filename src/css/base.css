@@ -30,3 +30,9 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+.title:hover,
+.title:focus {
+  color: gray;
+  transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 100ms;
+}
