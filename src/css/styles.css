@@ -104,7 +104,7 @@ body {
 
 /*==========TIMER==========*/
 
-input {
+#datetime-picker {
   background-color: transparent;
   width: 250px;
   height: 30px;
@@ -114,7 +114,7 @@ input {
   margin-bottom: 30px;
 }
 
-button {
+button[data-start] {
   width: 60px;
   height: 30px;
   border-radius: 5px;
@@ -141,7 +141,6 @@ button {
   width: calc((100% - 15px) / 4);
 }
 
-
 .value {
   display: block;
   font-size: 3em;
@@ -152,7 +151,6 @@ button {
   margin-bottom: 8px;
 }
 
-
 .label {
   font-size: 1em;
   color: #000000;
@@ -162,4 +160,35 @@ button {
 
 /*==========SNACKBAR==========*/
 
+input[name="delay"] {
+  background-color: transparent;
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
 
+fieldset {
+  background-color: transparent;
+  display:flex;
+  gap: 40px;
+  width: 250px;
+  height: 60px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+input[name="state"] {
+  margin-right: 8px;
+}
+
+button[type="submit"] {
+  background-color: rgb(204, 201, 201);
+  width: 250px;
+  height: 30px;
+  border-radius: 4px;
+}
